@@ -54,11 +54,11 @@
         {
             "type":"hulft-tgrp",
             "input":{
-                "record-start":"^GRP",
+                "record-start":"^TGRP",
                 "record-end":"^END$",
                 "record-item":[
-                    "^GRP=(.+)$",
-                    "^FORMAT DEF(.+)DEFEND$",
+                    "^TGRP=(.+)$",
+                    "^SERVER DEF\\s((.|\\s)+?)\\sDEFEND$",
                     "^COMMENT=(.+)$"
                 ]
             },

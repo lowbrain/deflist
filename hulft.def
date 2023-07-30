@@ -1,0 +1,82 @@
+SNDFILE=ファイルID1
+FILENAME=配信ファイル名
+[INTERVAL=転送間隔]
+[BLOCKLEN=転送ブロック長]
+[BLOCKCNT=転送ブロック数]
+COMP={NO|1|2|3} …………………………………………… 圧縮方式
+[COMPSIZE=圧縮単位]
+[DEFLATELEVEL={S|D|C}]  ………………………………… DEFLATEレベル
+[TRANSPRTY=転送優先度]
+TRANSTYPE={FORMAT|BINARY|TEXT|MFORMAT}  …………… 転送タイプ
+[CODESET={0|A|B|C|D|E|F|G|H|I|V|W|X}] ……………… EBCDICセット
+KJCHNGE={S|R|N} …………………………………………… コード変換
+[SHIFTTRANSACT={Y|N}] …………………………………… シフトコードの扱い
+[CLEAR={K|C|D|L}] ………………………………………… 配信ファイルの扱い
+[PREJOBID=配信前ジョブID]
+[JOBID=正常時ジョブID]
+[EJOBID=異常時ジョブID]
+[DBID=連携DBID]
+[MAILID=メール連携ID]
+GRPID=転送グループID
+[FMTID=フォーマットID|マルチフォーマットID]
+[PASSWORD=暗号キー]
+[COMMENT=コメント]
+END
+
+SNDFILE=ファイルID2
+FILENAME=配信ファイル名
+[INTERVAL=転送間隔]
+[BLOCKLEN=転送ブロック長]
+[BLOCKCNT=転送ブロック数]
+COMP={NO|1|2|3} …………………………………………… 圧縮方式
+[COMPSIZE=圧縮単位]
+[DEFLATELEVEL={S|D|C}]  ………………………………… DEFLATEレベル
+[TRANSPRTY=転送優先度]
+TRANSTYPE={FORMAT|BINARY|TEXT|MFORMAT}  …………… 転送タイプ
+[CODESET={0|A|B|C|D|E|F|G|H|I|V|W|X}] ……………… EBCDICセット
+KJCHNGE={S|R|N} …………………………………………… コード変換
+[SHIFTTRANSACT={Y|N}] …………………………………… シフトコードの扱い
+[CLEAR={K|C|D|L}] ………………………………………… 配信ファイルの扱い
+[PREJOBID=配信前ジョブID]
+[JOBID=正常時ジョブID]
+[EJOBID=異常時ジョブID]
+[DBID=連携DBID]
+[MAILID=メール連携ID]
+GRPID=転送グループID
+[FMTID=フォーマットID|マルチフォーマットID]
+[PASSWORD=暗号キー]
+[COMMENT=コメント]
+END
+
+SNDFILE=ファイルID3
+FILENAME=配信ファイル名
+[INTERVAL=転送間隔]
+[BLOCKLEN=転送ブロック長]
+[BLOCKCNT=転送ブロック数]
+COMP={NO|1|2|3} …………………………………………… 圧縮方式
+[COMPSIZE=圧縮単位]
+[DEFLATELEVEL={S|D|C}]  ………………………………… DEFLATEレベル
+[TRANSPRTY=転送優先度]
+TRANSTYPE={FORMAT|BINARY|TEXT|MFORMAT}  …………… 転送タイプ
+[CODESET={0|A|B|C|D|E|F|G|H|I|V|W|X}] ……………… EBCDICセット
+KJCHNGE={S|R|N} …………………………………………… コード変換
+[SHIFTTRANSACT={Y|N}] …………………………………… シフトコードの扱い
+[CLEAR={K|C|D|L}] ………………………………………… 配信ファイルの扱い
+[PREJOBID=配信前ジョブID]
+[JOBID=正常時ジョブID]
+[EJOBID=異常時ジョブID]
+[DBID=連携DBID]
+[MAILID=メール連携ID]
+GRPID=転送グループID
+[FMTID=フォーマットID|マルチフォーマットID]
+[PASSWORD=暗号キー]
+[COMMENT=コメント]
+END
+
+TGRP=転送グループID
+SERVER DEF
+  ホスト名1
+  ホスト名1000
+DEFEND
+[COMMENT=コメント]
+END
