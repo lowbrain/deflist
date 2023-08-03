@@ -6,6 +6,7 @@
                 "record-start":"^SNDFILE",
                 "record-end":"^END$",
                 "record-item":[
+                    "HOSTNAME",
                     "^SNDFILE=(.+)$",
                     "^FILENAME=(.+)$",
                     "^GRPID=(.+)$",
@@ -13,8 +14,8 @@
                 ]
             },
             "output":{
-                "header":"SNDFILE,FILENAME,GRPID,COMMENT",
-                "record":"1,2,3,4"
+                "header":"HOSTNAME,SNDFILE,FILENAME,GRPID,COMMENT",
+                "record":"\"{}\"\t\"{}\"\t\"{}\"\t\"{}\"\t\"{}\""
             }
         },
         {
@@ -23,6 +24,7 @@
                 "record-start":"^RCVFILE",
                 "record-end":"^END$",
                 "record-item":[
+                    "HOSTNAME",
                     "^RCVFILE=(.+)$",
                     "^FILENAME=(.+)$",
                     "^GRPID=(.+)$",
@@ -30,8 +32,8 @@
                 ]
             },
             "output":{
-                "header":"RCVFILE,FILENAME,GRPID,COMMENT",
-                "record":"1,2,3,4"
+                "header":"HOSTNAME,RCVFILE,FILENAME,GRPID,COMMENT",
+                "record":"\"{}\"\t\"{}\"\t\"{}\"\t\"{}\"\t\"{}\""
             }
         },
         {
@@ -40,6 +42,7 @@
                 "record-start":"^HOST",
                 "record-end":"^END$",
                 "record-item":[
+                    "HOSTNAME",
                     "^HOST=(.+)$",
                     "^HOSTTYPE=(.+)$",
                     "^KCODETYPE=(.+)$",
@@ -47,8 +50,8 @@
                 ]
             },
             "output":{
-                "header":"HOST,HOSTTYPE,KCODETYPE,COMMENT",
-                "record":"1,2,3,4"
+                "header":"HOSTNAME,HOST,HOSTTYPE,KCODETYPE,COMMENT",
+                "record":"\"{}\"\t\"{}\"\t\"{}\"\t\"{}\"\t\"{}\""
             }
         },
         {
@@ -57,14 +60,15 @@
                 "record-start":"^TGRP",
                 "record-end":"^END$",
                 "record-item":[
+                    "HOSTNAME",
                     "^TGRP=(.+)$",
                     "^SERVER DEF\\s((.|\\s)+?)\\sDEFEND$",
                     "^COMMENT=(.+)$"
                 ]
             },
             "output":{
-                "header":"GRP,HOSTS,COMMENT",
-                "record":"1,2,3"
+                "header":"HOSTNAME\tGRP\tHOSTS\tCOMMENT",
+                "record":"\"{}\"\t\"{}\"\t\"{}\"\t\"{}\""
             }
         }
     ]
